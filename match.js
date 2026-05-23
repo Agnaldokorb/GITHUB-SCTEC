@@ -1,3 +1,8 @@
+
+// compatibilidade = % = tanto de tanto 2/4 ou 50%
+// recomendacao = o que falta "ciano","vermelho"
+
+
 let tenho = ["azul","amarelo","laranja","violeta"]
 
 let precisa = ["amarelo","ciano","vermelho", "azul"]
@@ -12,7 +17,7 @@ let possui = precisa.filter((item)=>{
     return tenho.includes(item)
 })
 let qtdPossui = possui.length
-let qtd = precisa.length
+let qtdTotal = precisa.length
 
-let porcentagem = 
+let porcentagem = (qtdPossui / qtdTotal) * 100 
 
