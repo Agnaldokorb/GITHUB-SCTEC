@@ -9,6 +9,13 @@ let precisa = ["amarelo","ciano","vermelho", "azul"]
 
 //os que faltam
 
+let resultado = []
+for(let item of precisa){
+    if(!tenho.includes(item)){
+        resultado.push(item)
+    }
+}
+
 let falta = precisa.filter((item)=>{
     return !tenho.includes(item)
 })
